@@ -12,9 +12,8 @@ def main():
     clock = pygame.time.Clock()
     dt = 0
 
+    Player.containers = (updatable, drawable)
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
-    updatable.add(player)
-    drawable.add(player)
 
     while True:
         for event in pygame.event.get():
